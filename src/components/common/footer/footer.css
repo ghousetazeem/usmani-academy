@@ -1,0 +1,171 @@
+.newletter {
+	background-color: #6c63ff;
+	padding: 50px 0;
+	color: #fff;
+}
+
+.newletter .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 22rem;
+	justify-content: center;
+}
+
+footer,
+.flex-footer {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-footer {
+	gap: 50px;
+}
+
+.flex-padding {
+	padding: 70px 30px !important;
+}
+
+.newletter h1 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.newletter .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.newletter i {
+	padding: 12px;
+	color: #6c63ff;
+	background-color: #fff;
+}
+
+footer {
+	background-color: #eeeeee;
+}
+
+footer .container {
+	display: grid;
+	grid-template-columns: 5fr 2fr 4fr;
+	grid-gap: 40px;
+}
+
+footer .logo span {
+	color: #6c63ff;
+	font-size: 14px;
+}
+
+footer .logo p {
+	color: grey;
+	margin: 30px 0 15px 0;
+}
+
+footer .logo .icon {
+	background-color: #6c63ff;
+	color: white;
+	margin-right: 10px;
+}
+
+footer h3 {
+	margin-bottom: 40px;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+footer ul li {
+	margin-bottom: 20px;
+}
+
+/* footer .link li::before {
+	content: '⟶';
+	color: #6c63ff;
+	margin-right: 5px;
+} */
+
+footer .items {
+	margin-bottom: 30px;
+}
+
+footer .items img {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
+footer .items span,
+footer .items i {
+	font-size: 12px;
+	color: #6c63ff;
+	margin-right: 5px;
+	text-transform: capitalize;
+}
+
+footer h4 {
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+footer .last ul li {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+footer .last i {
+	width: 60px;
+	font-size: 20px;
+	color: #6c63ff;
+}
+
+.legal {
+	text-align: center;
+	padding: 50px 0;
+	color: grey;
+	background-color: #e9e9e9;
+}
+
+.legal p {
+	font-size: 12px;
+	margin-top: 0;
+}
+
+.legal i {
+	color: #6c63ff;
+}
+
+.link-box {
+	display: flex;
+	gap: 150px;
+}
+
+@media screen and (max-width: 768px) {
+	.flex-footer {
+		flex-wrap: wrap;
+		justify-content: none;
+	}
+
+	.link-box {
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	.link-box {
+		flex-direction: column;
+	}
+
+	.flex-padding {
+		padding: 60px 15px !important;
+	}
+
+	.legal p {
+		font-size: 10.5px;
+	}
+}
