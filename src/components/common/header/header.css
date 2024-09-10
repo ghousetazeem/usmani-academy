@@ -1,0 +1,164 @@
+/*--------head------------*/
+.head {
+	padding: 20px 0;
+	color: #fff;
+}
+
+.logo h1 {
+	font-size: 35px;
+	font-weight: 900;
+}
+
+.head .icon {
+	margin-left: 10px;
+}
+
+.flexSB {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button {
+	font-size: 2rem;
+	font-weight: bolder;
+}
+
+/*--------head------------*/
+/*--------header------------*/
+header {
+	margin: 30px auto;
+	/* padding: 20px 0px; */
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	transition: 0.2s ease-in-out;
+}
+
+.header-color {
+	background-color: #6c63ff;
+}
+
+header.scrolled {
+	margin: 0px 0px;
+}
+
+header .nav {
+	display: flex !important;
+}
+
+header li {
+	margin-right: 50px;
+}
+
+header ul {
+	padding: 30px 20px;
+}
+
+header ul li a {
+	color: #fff;
+	font-weight: 500;
+	transition: 0.5s;
+}
+
+header ul li a:hover {
+	color: #d1cfff;
+}
+
+.start {
+	padding: 16px 50px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.toggle {
+	display: none;
+}
+
+.logoImg {
+	/* background-image: url('../../../images/logo.png'); */
+	width: 44px;
+	height: 44px;
+}
+
+.start:hover {
+	cursor: pointer;
+}
+
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+	.start {
+		clip-path: none;
+	}
+
+	header {
+		margin: 0;
+		background-color: #6c63ff;
+	}
+
+	header ul.flexSB {
+		display: none;
+	}
+
+	header ul li {
+		margin-bottom: 20px;
+	}
+
+	.toggle {
+		display: block;
+		background: none;
+		color: #fff;
+		font-size: 30px;
+		right: 0;
+		margin: 0px !important;
+		top: -20px;
+		box-shadow: none;
+	}
+
+	.header-color {
+		flex-wrap: wrap;
+	}
+
+	.start {
+		padding: 16px 0px;
+	}
+
+	.fa {
+		margin-left: 0px;
+	}
+
+	.mobile-nav {
+		order: 2;
+		width: 100%;
+		background-color: #6c63ff;
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.start {
+		padding: 0px;
+	}
+
+	#heading h1 {
+		font-size: 37px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 376px) {
+	#heading h1 {
+		font-size: 33px;
+	}
+
+	header ul {
+		padding: 15px 20px;
+	}
+}
