@@ -1,5 +1,6 @@
 import React from 'react'
 import Roadmap from '../Roadmap'
+import Form from './Form'
 
 const Robotics = () => {
     return (
@@ -11,6 +12,7 @@ const Robotics = () => {
                 listItems={['React', 'Node', 'MongoDB', 'Express']}
                 link="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
             />
+            <Form />
         </>
     )
 }
