@@ -15,7 +15,7 @@ function Form() {
             : "https://test-hosting-eight.vercel.app"; // Hosted backend
 
         try {
-            let response = await axios.post(`${baseUrl}/english-payment`);
+            let response = await axios.post(`${baseUrl}/math-payment`);
             if (response && response.status === 200) {
                 window.location.href = response.data.url;
             }
@@ -27,7 +27,7 @@ function Form() {
 
     const sendEmail = () => {
         return emailjs
-            .sendForm('service_v2tgif3', 'template_cbqpaga', form.current, 'hVRjQU-0qQWPCIa4h')
+            .sendForm('service_v2tgif3', 'template_6lcsknl', form.current, 'hVRjQU-0qQWPCIa4h')
             .then(
                 () => {
                     console.log('Email sent successfully!');

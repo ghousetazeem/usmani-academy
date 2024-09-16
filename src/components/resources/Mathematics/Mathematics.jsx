@@ -1,6 +1,7 @@
 import React from 'react'
 import Roadmap from '../Roadmap'
 import '../roadmap.css'
+import Form from './Form'
 
 const Mathematics = () => {
     return (
@@ -12,6 +13,7 @@ const Mathematics = () => {
                 listItems={['React', 'Node', 'MongoDB', 'Express']}
                 link="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
             />
+            <Form />
         </>
     )
 }

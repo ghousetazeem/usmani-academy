@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/common/header/Header';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Updated to Routes from Switch
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; // Use BrowserRouter for clean URLs
 import About from './components/about/About';
 import Resources from './components/resources/Resources';
 import Team from './components/team/Team';
@@ -15,24 +15,25 @@ import English from './components/resources/English/English';
 
 import { ThemeProvider } from "@material-tailwind/react";
 import Success from './components/resources/Success';
+import PaymentCancelled from './components/resources/PaymentCancelled';
 
 function AppContent() {
   const location = useLocation();
 
   return (
     <>
-      <Routes> {/* Updated to Routes */}
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/resources" element={<Resources />} />
-        <Route exact path="/team" element={<Team />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/resources/maths" element={<Mathematics />} />
-        <Route exact path="/resources/robotics" element={<Robotics />} />
-        <Route exact path="/resources/english" element={<English />} />
-        <Route path="/success" element={<Success />} /> {/* Use element for v6 */}
-      </Routes>
-      {/* Conditionally render the Footer */}
+      <Switch> {/* Switch to BrowserRouter */}
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/resources" component={Resources} />
+        <Route exact path="/team" component={Team} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/resources/maths" component={Mathematics} />
+        <Route exact path="/resources/robotics" component={Robotics} />
+        <Route exact path="/resources/english" component={English} />
+        <Route path="/success" component={Success} />
+        <Route path="/cancelled" component={PaymentCancelled} />
+      </Switch>
       {location.pathname !== "/community-chat" && <Footer />}
     </>
   );

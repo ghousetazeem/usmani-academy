@@ -15,7 +15,7 @@ const Success = () => {
                     <p className="success-message">Thank you for completing your secure online payment.</p>
                     <p> Have a great day! </p>
                     <div className="button-container">
-                        <a href="/dashboard" className="success-button">
+                        <a href="/resources" className="success-button">
                             GO BACK
                         </a>
                     </div>
