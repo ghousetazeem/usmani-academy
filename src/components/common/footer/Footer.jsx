@@ -8,11 +8,10 @@ const Footer = () => {
 			<footer>
 				<div className="mycontainer padding flex-footer flex-padding">
 					<div className="box logo" style={{ flex: '1' }}>
-						<h1>ACADEMIA</h1>
-						<span>ONLINE EDUCATION & LEARNING</span>
+						<h1>Usmani Academy</h1>
+						<span>Empowering Minds, Shaping Futures</span>
 						<p>
-							A small river named Duden flows by their place and supplies it with the
-							necessary regelialia.
+							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
 						</p>
 
 						<i className="fab fa-linkedin icon"></i>
@@ -23,11 +22,10 @@ const Footer = () => {
 						<div className="box link">
 							<h3>Explore</h3>
 							<ul>
-								<li>About Us</li>
-								<li>Services</li>
+								<li>Home</li>
 								<li>Courses</li>
-								<li>Blog</li>
-								<li>Contact us</li>
+								<li>About</li>
+								<li>Contact</li>
 							</ul>
 						</div>
 
@@ -40,11 +38,12 @@ const Footer = () => {
 								</li>
 								<li>
 									<i className="fa fa-phone-alt"></i>
-									+2 392 3929 210
+									3165703507
+
 								</li>
 								<li>
 									<i className="fa fa-paper-plane"></i>
-									lerntek@gmail.com
+									info@usmaniacademy.com
 								</li>
 							</ul>
 						</div>
@@ -54,7 +53,7 @@ const Footer = () => {
 			<div className="legal">
 				<p>
 					Copyright ©2024 All rights reserved | Made with <i className="fa fa-heart"></i>{' '}
-					by <span>LernTek</span> Team
+					by <span>Usmani Academy</span> Team
 				</p>
 			</div>
 		</>

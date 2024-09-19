@@ -44,7 +44,7 @@ export const awrapper = [
 export const resourcesCard = [
 	{
 		id: 1,
-		cover: '../images/courses/programming.png',
+		cover: '../images/courses/math.jpg',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
 			{
@@ -59,7 +59,7 @@ export const resourcesCard = [
 	},
 	{
 		id: 2,
-		cover: '../images/courses/ds.png',
+		cover: '../images/courses/robotics.jpg',
 		coursesName: 'Enhancing Adobe Photoshop CC 2020 Skills',
 		courTeacher: [
 			{
@@ -74,7 +74,7 @@ export const resourcesCard = [
 	},
 	{
 		id: 3,
-		cover: '../images/courses/webdev.jpg',
+		cover: '../images/courses/english.jpg',
 		coursesName: 'HTML, CSS, and Javascript for Web Developers',
 		courTeacher: [
 			{

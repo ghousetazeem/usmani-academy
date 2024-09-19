@@ -10,16 +10,15 @@ const Hero = () => {
 				<div className="mycontainer">
 					<div className="row">
 						<Heading
-							subtitle="WELCOME TO ACADEMIA"
-							title="Best Online Education Expertise"
+							subtitle="Welcome to Usmani Academy"
+							title="Empowering Minds, Shaping Futures"
 						/>
 						<p>
-							Far far away, behind the word mountains, far from the countries Vokalia
-							and Consonantia, there live the blind texts.
+							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
 						</p>
 						<div className="button">
 							<Link to="/resources">
-								<button className="primary-btn">
+								<button className="primary-btn" style={{ fontSize: "1rem" }}>
 									GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i>
 								</button>
 							</Link>
