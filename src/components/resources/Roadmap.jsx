@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './roadmap.css';
 
-const Roadmap = ({ imageSrc, heading, paragraph, listItems, link }) => {
+const Roadmap = ({ imageSrc, heading, paragraph, paragraph2, paragraph3, paragraph4, paragraph5, paragraph6, listItems, listItems2, listItems3, listItems4, listItems5, listItems6, link }) => {
 	const [isFullScreen, setIsFullScreen] = useState(false);
 
 	const toggleFullScreen = () => {
@@ -13,7 +13,7 @@ const Roadmap = ({ imageSrc, heading, paragraph, listItems, link }) => {
 	};
 
 	return (
-		<div className=" roadmap">
+		<div className="roadmap">
 			<div className="mycontainer roadmap-flex">
 				{/* Left Half - Photo */}
 				<div className="photo-container" onClick={toggleFullScreen}>
@@ -33,26 +33,73 @@ const Roadmap = ({ imageSrc, heading, paragraph, listItems, link }) => {
 				<div className="content-container">
 					<h2 className="heading">{heading}</h2>
 					<p className="paragraph">{paragraph}</p>
-					<ul className="list">
-						{listItems.map((item, index) => (
-							<li key={index}> - {item}</li>
-						))}
-					</ul>
-
-					<button
-						style={{
-							backgroundColor: '#6c63ff',
-							color: 'white',
-							padding: '15px 30px',
-							border: 'none',
-							borderRadius: '4px',
-							cursor: 'pointer',
-						}}
-						className="buttons"
-						onClick={openLinkInNewTab}
-					>
-						Detailed Roadmap
-					</button>
+					{listItems.length > 0 && (
+						<ul className="list">
+							{listItems.map((item, index) => (
+								<li key={index}> - {item}</li>
+							))}
+						</ul>
+					)}
+					{paragraph2 && (
+						<>
+							<p className="paragraph">{paragraph2}</p>
+							{listItems2.length > 0 && (
+								<ul className="list">
+									{listItems2.map((item, index) => (
+										<li key={index}> - {item}</li>
+									))}
+								</ul>
+							)}
+						</>
+					)}
+					{paragraph3 && (
+						<>
+							<p className="paragraph">{paragraph3}</p>
+							{listItems3.length > 0 && (
+								<ul className="list">
+									{listItems3.map((item, index) => (
+										<li key={index}> - {item}</li>
+									))}
+								</ul>
+							)}
+						</>
+					)}
+					{paragraph4 && (
+						<>
+							<p className="paragraph">{paragraph4}</p>
+							{listItems3.length > 0 && (
+								<ul className="list">
+									{listItems4.map((item, index) => (
+										<li key={index}> - {item}</li>
+									))}
+								</ul>
+							)}
+						</>
+					)}
+					{paragraph5 && (
+						<>
+							<p className="paragraph">{paragraph5}</p>
+							{listItems3.length > 0 && (
+								<ul className="list">
+									{listItems5.map((item, index) => (
+										<li key={index}> - {item}</li>
+									))}
+								</ul>
+							)}
+						</>
+					)}
+					{paragraph6 && (
+						<>
+							<p className="paragraph">{paragraph6}</p>
+							{listItems3.length > 0 && (
+								<ul className="list">
+									{listItems6.map((item, index) => (
+										<li key={index}> - {item}</li>
+									))}
+								</ul>
+							)}
+						</>
+					)}
 				</div>
 			</div>
 		</div>

@@ -6,7 +6,7 @@
 .price h1 {
   font-size: 50px;
   margin: 20px 0;
-  color: #6c63ff;
+  color: #09a44c;
 }
 
 .price h1 span {
@@ -49,7 +49,7 @@
 }
 
 .faq .accordion:hover {
-  background-color: #6c63ff;
+  background-color: #09a44c;
   color: #fff;
 }
 

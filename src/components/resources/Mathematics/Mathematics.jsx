@@ -7,11 +7,15 @@ const Mathematics = () => {
     return (
         <>
             <Roadmap
-                imageSrc="https://cdn.pixabay.com/photo/2023/12/08/09/13/vine-8437282_1280.jpg"
-                heading="Roadmap for Web Development"
-                paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates."
-                listItems={['React', 'Node', 'MongoDB', 'Express']}
-                link="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi"
+                imageSrc="https://images.pexels.com/photos/5905611/pexels-photo-5905611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                heading="Mathematics Course"
+                paragraph="Elementary"
+                listItems={['Basic math operations', 'Functional properties', 'Shapes', 'Geometry I', 'Basic fractions', 'Simple division']}
+                paragraph2="Middle"
+                listItems2={['Integers & rational numbers', 'Geometry II', 'Lines & angles I', 'Algebra I', 'Graphs', 'Statistics']}
+                paragraph3="High"
+                listItems3={['Sequence and series', 'Geometry III', 'Complex numbers', 'Lines & angles II', 'Domains & functions', 'Algebra II', 'Triangles', 'Trigonometry', 'Calculus']}
+
             />
             <Form />
         </>

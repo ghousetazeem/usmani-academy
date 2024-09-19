@@ -28,7 +28,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 60px;
-	background-color: #6c63ff;
+	background-color: #09a44c;
 	color: #fff;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .testimonal .name span {
-	color: #6c63ff;
+	color: #09a44c;
 }
 
 .testimonal p {
@@ -52,7 +52,7 @@
 }
 
 .testimonal .items:hover {
-	background-color: #6c63ff;
+	background-color: #09a44c;
 	color: #fff;
 	cursor: pointer;
 }
@@ -64,7 +64,7 @@
 
 .testimonal .items:hover i {
 	background-color: #fff;
-	color: #6c63ff;
+	color: #09a44c;
 }
 
 .swiper {

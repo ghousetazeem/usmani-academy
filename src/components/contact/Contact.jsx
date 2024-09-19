@@ -12,24 +12,24 @@ const Contact = () => {
 						<p>We're open for any suggestion or just to have a chat</p>
 
 						<div className="items grid2">
-							<div className="box">
+							{/* <div className="box">
 								<h4>ADDRESS:</h4>
 								<p>Muffakham Jah College of Engineering and</p>
 								<p>Technology, Hyderabad, India</p>
-							</div>
+							</div> */}
 							<div className="box">
 								<h4>EMAIL:</h4>
-								<p> lerntek@gmail.com</p>
-								<p> ghousetazeem75@gmail.com</p>
+								<p> info@usmaniacademy.com</p>
+								{/* <p> rizwan@usmaniacademy.com</p> */}
 							</div>
 							<div className="box">
 								<h4>PHONE:</h4>
-								<p> +91-6309274038</p>
-								<p> +91-6309274038</p>
+								<p> 3165703507</p>
+								{/* <p> +91-6309274038</p> */}
 							</div>
 						</div>
 
-						<form action="https://formspree.io/f/xvoeplaa" method="POST">
+						<form method="POST">
 							<div className="flexSB name-email">
 								<input type="text" name="name" placeholder="Name" />
 								<input type="email" name="email" placeholder="Email" />
@@ -46,10 +46,10 @@ const Contact = () => {
 
 						{/* <h3>Follow us here</h3>
             <div className='social'>
-              <i style={{ border: " 2px solid #6c63ff", marginRight: "8px" }} className='fab fa-facebook-f icon'></i>
-              <i style={{ border: " 2px solid #6c63ff", marginRight: "8px" }} className='fab fa-instagram icon'></i>
-              <i style={{ border: " 2px solid #6c63ff", marginRight: "8px" }} className='fab fa-twitter icon'></i>
-              <i style={{ border: " 2px solid #6c63ff", marginRight: "8px" }} className='fab fa-youtube icon'></i>
+              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-facebook-f icon'></i>
+              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-instagram icon'></i>
+              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-twitter icon'></i>
+              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-youtube icon'></i>
             </div> */}
 					</div>
 				</div>

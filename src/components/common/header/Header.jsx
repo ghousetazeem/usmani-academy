@@ -22,8 +22,8 @@ const Header = () => {
 					<nav className="flexSB header-color">
 						<a href="/">
 							<div className="start">
-								<img className="logoImg" src="../images/logo.png" />
-								<div className="button">LernTek</div>
+								{/* <img className="logoImg" src="../images/logo.png" /> */}
+								<div className="button">Usmani Academy</div>
 							</div>
 						</a>
 						<ul
