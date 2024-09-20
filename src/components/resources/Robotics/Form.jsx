@@ -12,7 +12,7 @@ function Form() {
         // Determine the base URL based on environment
         const baseUrl = window.location.hostname === "localhost"
             ? "http://localhost:3000" // Local backend
-            : "https://usmani-academy-backend.vercel.app/"; // Hosted backend
+            : "https://usmani-academy-backend.vercel.app"; // Hosted backend
 
         try {
             let response = await axios.post(`${baseUrl}/robotics-payment`);
