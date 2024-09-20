@@ -46,10 +46,10 @@ const Contact = () => {
 
 						{/* <h3>Follow us here</h3>
             <div className='social'>
-              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-facebook-f icon'></i>
-              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-instagram icon'></i>
-              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-twitter icon'></i>
-              <i style={{ border: " 2px solid #09a44c", marginRight: "8px" }} className='fab fa-youtube icon'></i>
+              <i style={{ border: " 2px solid #273e06", marginRight: "8px" }} className='fab fa-facebook-f icon'></i>
+              <i style={{ border: " 2px solid #273e06", marginRight: "8px" }} className='fab fa-instagram icon'></i>
+              <i style={{ border: " 2px solid #273e06", marginRight: "8px" }} className='fab fa-twitter icon'></i>
+              <i style={{ border: " 2px solid #273e06", marginRight: "8px" }} className='fab fa-youtube icon'></i>
             </div> */}
 					</div>
 				</div>

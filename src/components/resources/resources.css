@@ -32,7 +32,7 @@
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	background-color: #09a44c;
+	background-color: #273e06;
 	padding: 15px;
 }
 
@@ -55,7 +55,7 @@
 
 .coursesCard .rate {
 	margin: 20px 0;
-	color: #09a44c;
+	color: #273e06;
 }
 
 .coursesCard .rate i {
@@ -77,7 +77,7 @@
 }
 
 .coursesCard .details span {
-	color: #09a44c;
+	color: #273e06;
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -89,7 +89,7 @@
 
 .coursesCard h3 {
 	font-weight: 500;
-	color: #09a44c;
+	color: #273e06;
 }
 
 .price {
@@ -133,7 +133,7 @@
 	padding: 5px 20px;
 	font-weight: 500;
 	font-size: 15px;
-	color: #09a44c;
+	color: #273e06;
 	border-radius: 5px;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .online .box:hover {
-	background-color: #09a44c;
+	background-color: #273e06;
 	border-radius: 5px;
 	cursor: pointer;
 }
