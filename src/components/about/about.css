@@ -49,7 +49,7 @@
 }
 
 .aboutHome .item:hover {
-	background-color: #09a44c;
+	background-color: #273e06;
 	color: #fff;
 	cursor: pointer;
 	box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
@@ -88,7 +88,7 @@
 }
 
 .faq .accordion:hover {
-	background-color: #09a44c;
+	background-color: #273e06;
 	color: #fff;
 }
 

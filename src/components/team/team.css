@@ -64,7 +64,7 @@
 }
 
 .team .items:hover {
-	background-color: #09a44c;
+	background-color: #273e06;
 	color: #fff;
 	cursor: pointer;
 }
@@ -78,7 +78,7 @@
 }
 
 .team .items:hover .overlay i:hover {
-	background-color: #09a44c;
+	background-color: #273e06;
 	color: #fff;
 }
 
