@@ -5,7 +5,7 @@ const stripe = require('stripe')('sk_test_51PvqcCP1EsRYpQZoB6qrfvZG8jlXgbLEFYmcA
 const app = express();
 
 app.use(cors({
-    origin: ["http://localhost:5500", "http://localhost:5173", "https://test-hosting-5e4n.vercel.app", "https://test-hosting-eight.vercel.app"],
+    origin: ["http://localhost:5500", "http://localhost:5173", "https://usmani-academy-backend.vercel.app/", "https://usmani-academy-frontend.vercel.app/"],
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
     allowedHeaders: "Content-Type,Authorization",
@@ -43,8 +43,8 @@ app.post('/english-payment', async (req, res) => {
                         }
                     ],
                     mode: 'payment',
-                    success_url: 'http://localhost:5173/success',
-                    cancel_url: 'http://localhost:5173/cancelled',
+                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
+                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
                 });
 
                 res.json(session);
@@ -81,8 +81,8 @@ app.post('/robotics-payment', async (req, res) => {
                         }
                     ],
                     mode: 'payment',
-                    success_url: 'http://localhost:5173/success',
-                    cancel_url: 'http://localhost:5173/cancelled',
+                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
+                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
                 });
 
                 res.json(session);
@@ -119,8 +119,8 @@ app.post('/math-payment', async (req, res) => {
                         }
                     ],
                     mode: 'payment',
-                    success_url: 'http://localhost:5173/success',
-                    cancel_url: 'http://localhost:5173/cancelled',
+                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
+                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
                 });
 
                 res.json(session);
