@@ -22,7 +22,7 @@ const Header = () => {
 					<nav className="flexSB header-color">
 						<a href="/">
 							<div className="start">
-								{/* <img className="logoImg" src="../images/logo.png" /> */}
+								<img className="logoImg" src="../logo-acad.png" />
 								<div className="button">Usmani Academy</div>
 							</div>
 						</a>
