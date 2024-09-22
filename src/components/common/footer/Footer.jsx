@@ -13,10 +13,7 @@ const Footer = () => {
 						<p>
 							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
 						</p>
-
-						<i className="fab fa-linkedin icon"></i>
-						<i className="fab fa-twitter icon"></i>
-						<i className="fab fa-instagram icon"></i>
+						<a href="https://www.instagram.com/usmani_academy?igsh=MW9qNXgwZjNzM3A0ZA%3D%3D&utm_source=qr"><i className="fab fa-instagram icon"></i></a>
 					</div>
 					<div className="link-box">
 						<div className="box link">
@@ -34,7 +31,7 @@ const Footer = () => {
 							<ul>
 								<li>
 									<i className="fa fa-map"></i>
-									2330N Oliver St. Wichita, Kansas 67220
+									12405 E Lincoln Ct, Wichita, KS 67207
 								</li>
 								<li>
 									<i className="fa fa-phone-alt"></i>
@@ -52,8 +49,7 @@ const Footer = () => {
 			</footer>
 			<div className="legal">
 				<p>
-					Copyright ©2024 All rights reserved | Made with <i className="fa fa-heart"></i>{' '}
-					by <span>Usmani Academy</span> Team
+					Copyright ©2024 All rights reserved | <span>Usmani Academy</span> Team
 				</p>
 			</div>
 		</>

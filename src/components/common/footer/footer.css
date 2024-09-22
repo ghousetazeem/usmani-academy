@@ -19,7 +19,7 @@ footer,
 }
 
 .flex-footer {
-	gap: 50px;
+	gap: 20px;
 }
 
 .flex-padding {
@@ -152,7 +152,7 @@ footer .last i {
 	}
 
 	.link-box {
-		gap: 50px;
+		gap: 20px;
 	}
 }
 

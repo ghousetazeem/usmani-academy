@@ -19,7 +19,7 @@ const Hero = () => {
 						<div className="button">
 							<Link to="/resources">
 								<button className="primary-btn" style={{ fontSize: "1rem" }}>
-									GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i>
+									Start Now <i className="fa fa-long-arrow-alt-right"></i>
 								</button>
 							</Link>
 						</div>
