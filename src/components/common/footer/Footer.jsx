@@ -35,7 +35,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<i className="fa fa-phone-alt"></i>
-									3165703507
+									3162356743
 
 								</li>
 								<li>
