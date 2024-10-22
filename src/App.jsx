@@ -16,6 +16,7 @@ import English from './components/resources/English/English';
 import { ThemeProvider } from "@material-tailwind/react";
 import Success from './components/resources/Success';
 import PaymentCancelled from './components/resources/PaymentCancelled';
+import Art from './components/art/Art';
 
 function AppContent() {
   const location = useLocation();
@@ -27,6 +28,7 @@ function AppContent() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/resources" element={<Resources />} />
         <Route exact path="/team" element={<Team />} />
+        <Route exact path="/art" element={<Art />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/resources/maths" element={<Mathematics />} />
         <Route exact path="/resources/robotics" element={<Robotics />} />

@@ -8,7 +8,7 @@ const Mathematics = () => {
         <>
             <Roadmap
                 imageSrc="https://images.pexels.com/photos/5905611/pexels-photo-5905611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                heading="Mathematics Course"
+                heading="Maths Course"
                 paragraph="Elementary"
                 listItems={['Basic math operations', 'Functional properties', 'Shapes', 'Geometry I', 'Basic fractions', 'Simple division']}
                 paragraph2="Middle"
