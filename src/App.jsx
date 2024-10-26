@@ -17,6 +17,9 @@ import { ThemeProvider } from "@material-tailwind/react";
 import Success from './components/resources/Success';
 import PaymentCancelled from './components/resources/PaymentCancelled';
 import Art from './components/art/Art';
+import IslamicCourse from './components/islamicCourses/IslamicCourse';
+import Organization from './components/islamicCourses/Orgnaization/Organization';
+import Art1 from './components/art/Art1/Art1';
 
 function AppContent() {
   const location = useLocation();
@@ -29,10 +32,13 @@ function AppContent() {
         <Route exact path="/resources" element={<Resources />} />
         <Route exact path="/team" element={<Team />} />
         <Route exact path="/art" element={<Art />} />
+        <Route exact path="/art/art1" element={<Art1 />} />
+        <Route exact path="/islamic-course" element={<IslamicCourse />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/resources/maths" element={<Mathematics />} />
         <Route exact path="/resources/robotics" element={<Robotics />} />
         <Route exact path="/resources/english" element={<English />} />
+        <Route exact path="/islamic-course/organization" element={<Organization />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancelled" element={<PaymentCancelled />} />
       </Routes>

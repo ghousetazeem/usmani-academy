@@ -58,7 +58,6 @@ li {
 }
 
 .row {
-  width: 50%;
   margin-top: 8rem;
 }
 
@@ -103,14 +102,15 @@ button:hover {
 
 #heading h1 {
   font-size: 45px;
-  width: 100vh;
-  margin: 20px 0;
   text-transform: capitalize;
+  text-align: center;
+  color: black;
 }
 
 p {
   line-height: 30px;
   font-size: 18px;
+  text-align: center;
 }
 
 .back {

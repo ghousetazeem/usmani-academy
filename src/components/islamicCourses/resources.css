@@ -1,5 +1,5 @@
 .coursesCard {
-    padding-top: 60px;
+    padding-top: 160px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -160,3 +160,53 @@
 
 /*-------------online---------*/
 @media screen and (max-width: 768px) {}
+
+.instructor {
+    margin: 14rem;
+    margin-top: 4rem;
+    /* border: 2px solid black; */
+    display: flex;
+    border-radius: 0.4rem;
+    gap: 3rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+}
+
+.instructor:hover {
+    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0.2, 0.2);
+}
+
+.instructor-info {
+    margin-top: 1.4rem;
+    padding-right: 1rem;
+}
+
+.instructor img {
+    width: 400px;
+    height: 600px;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.instructor h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.instructor h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.instructor p {
+    font-size: 1rem;
+}
+
+.instructor ol {
+    list-style: circle;
+}
+
+.instruct {
+    text-align: center;
+    font-size: 4rem;
+}

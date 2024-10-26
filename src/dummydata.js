@@ -89,6 +89,27 @@ export const resourcesCard = [
 	},
 
 ];
+
+export const iresourcesCard = [
+	{
+		id: 1,
+		cover: 'https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		coursesName: 'Introducing to Software Engineering',
+		courTeacher: [
+			{
+				dcover: './images/back.webp',
+				name: 'by John Smith',
+				totalTime: '50 lectures (190 hrs)',
+			},
+		],
+		courseTitle: 'Islamic Organizations',
+		pricePer: '$15 per month',
+		resourceRoute: 'islamic-course/organization',
+	},
+
+];
+
+
 export const online = [
 	{
 		cover: './images/courses/online/o1.png',
@@ -239,16 +260,17 @@ export const blog = [
 		type: 'Type of Art',
 		date: 'JAN. 18, 2021',
 		com: '3 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		resourceRoute: 'art/art1'
 	},
 	{
 		id: 2,
 		type: 'Type of Art',
 		date: 'API. 25, 2022',
 		com: '5 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/2123337/pexels-photo-2123337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 	},
@@ -257,7 +279,7 @@ export const blog = [
 		type: 'Type of Art',
 		date: 'MAY. 15, 2022',
 		com: '10 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/1227497/pexels-photo-1227497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 	},
@@ -266,7 +288,7 @@ export const blog = [
 		type: 'Type of Art',
 		date: 'JAN. 02, 2022',
 		com: '3 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/976882/pexels-photo-976882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 	},
@@ -275,7 +297,7 @@ export const blog = [
 		type: 'Type of Art',
 		date: 'DEC. 14, 2022',
 		com: '3 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/236171/pexels-photo-236171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 	},
@@ -284,7 +306,7 @@ export const blog = [
 		type: 'Type of Art',
 		date: 'JAN. 18, 2021',
 		com: '12 COMMENTS ',
-		title: 'Build your Dream Software & Engineering Career',
+		title: 'Artisitic Potrait of the Natures beauty',
 		desc: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
 		cover: 'https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 	},
@@ -328,3 +350,4 @@ export const testimonal = [
 		cover: './images/testo/t3.webp',
 	},
 ];
+

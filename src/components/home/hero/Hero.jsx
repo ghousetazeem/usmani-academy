@@ -13,13 +13,13 @@ const Hero = () => {
 							subtitle="Welcome to Usmani Academy"
 							title="Empowering Minds, Shaping Futures"
 						/>
-						<p>
+						<p className='hero-p'>
 							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
 						</p>
 						<div className="button">
 							<Link to="/resources">
 								<button className="primary-btn" style={{ fontSize: "1rem" }}>
-									Start Now <i className="fa fa-long-arrow-alt-right"></i>
+									Start Now
 								</button>
 							</Link>
 						</div>
