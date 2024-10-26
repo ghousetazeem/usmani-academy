@@ -1,5 +1,5 @@
 .hero {
-	background-image: url('../../../../images/bgr.png');
+	background-image: url('../../../../images/bgr.jpg');
 	background-size: cover;
 	top: 0;
 	left: 0;
@@ -12,13 +12,20 @@
 }
 
 .hero #heading h3 {
-	color: #fff;
+	color: black;
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 .hero #heading {
 	text-align: left;
 	margin: 0;
 	padding: 0;
+}
+
+.hero-p {
+	color: black;
+	margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {
