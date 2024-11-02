@@ -20,6 +20,10 @@ import Art from './components/art/Art';
 import IslamicCourse from './components/islamicCourses/IslamicCourse';
 import Organization from './components/islamicCourses/Orgnaization/Organization';
 import Art1 from './components/art/Art1/Art1';
+import AsmaeHusna from './components/islamicCourses/AsmaUlHusna/AsmaeHusna';
+import Tafseer from './components/islamicCourses/TafseeAlSurahs/Tafseer';
+import HappyMuslim from './components/islamicCourses/HowToBeAHappyMuslim/HappyMuslim';
+import FinaLiteracy from './components/islamicCourses/Finacial Literacy/FinLiteracy';
 
 function AppContent() {
   const location = useLocation();
@@ -39,6 +43,10 @@ function AppContent() {
         <Route exact path="/resources/robotics" element={<Robotics />} />
         <Route exact path="/resources/english" element={<English />} />
         <Route exact path="/islamic-course/organization" element={<Organization />} />
+        <Route exact path="/islamic-course/asma-ul-husna" element={<AsmaeHusna />} />
+        <Route exact path="/islamic-course/tafseer-al-surah" element={<Tafseer />} />
+        <Route exact path="/islamic-course/happy-muslim" element={<HappyMuslim />} />
+        <Route exact path="/islamic-course/finance-literacy" element={<FinaLiteracy />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancelled" element={<PaymentCancelled />} />
       </Routes>

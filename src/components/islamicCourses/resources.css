@@ -200,6 +200,7 @@
 
 .instructor p {
     font-size: 1rem;
+    text-align: start;
 }
 
 .instructor ol {

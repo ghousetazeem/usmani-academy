@@ -21,7 +21,7 @@ const ArtCard = () => {
                             </div>
 
                             <div style={{ margin: "16px", marginTop: "0", color: "#273e06", fontSize: "1.4rem", textAlign: "left", fontWeight: "bold" }}>
-                                <h2 >{val.title}</h2>
+                                <h2 className="arthead" >{val.title}</h2>
                             </div>
                             <Link to={`/${val.resourceRoute}`}> {/* Ensure route starts with / */}
                                 <button className="outline-btn">See more...</button>

@@ -8,7 +8,7 @@ const Hero = () => {
 		<>
 			<section className="hero">
 				<div className="mycontainer">
-					<div className="row">
+					<div className="row" style={{ color: "black" }}>
 						<Heading
 							subtitle="Welcome to Usmani Academy"
 							title="Empowering Minds, Shaping Futures"
@@ -19,7 +19,7 @@ const Hero = () => {
 						<div className="button">
 							<Link to="/resources">
 								<button className="primary-btn" style={{ fontSize: "1rem" }}>
-									Start Now
+									Start Now <i className="fa fa-long-arrow-alt-right"></i>
 								</button>
 							</Link>
 						</div>
