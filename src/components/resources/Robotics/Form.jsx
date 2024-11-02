@@ -66,8 +66,8 @@ function Form() {
                         <input type="email" id="email" name="email" placeholder="Eg. ismail123@gmail.com" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="rollnumber">Roll Number:</label>
-                        <input type="text" id="rollnumber" name="rollnumber" placeholder="Eg. 8764..." required />
+                        <label htmlFor="course">Course:</label>
+                        <input type="text" id="course" name="course" placeholder="Eg. Math/Asma-ul-husna, etc..." required />
                     </div>
                 </div>
 

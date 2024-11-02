@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
 import emailjs from '@emailjs/browser';
-import './artform.css'
+import '../../resources/form.css'
 
 function Form() {
     const form = useRef();
@@ -15,7 +15,7 @@ function Form() {
             : "https://usmani-academy-backend.vercel.app"; // Hosted backend
 
         try {
-            let response = await axios.post(`${baseUrl}/english-payment`);
+            let response = await axios.post(`${baseUrl}/asma-ul-husna`);
             if (response && response.status === 200) {
                 window.location.href = response.data.url;
             }
@@ -27,7 +27,7 @@ function Form() {
 
     const sendEmail = () => {
         return emailjs
-            .sendForm('service_v2tgif3', 'template_cbqpaga', form.current, 'hVRjQU-0qQWPCIa4h')
+            .sendForm('service_v2tgif3', 'template_6lcsknl', form.current, 'hVRjQU-0qQWPCIa4h')
             .then(
                 () => {
                     console.log('Email sent successfully!');
@@ -67,7 +67,7 @@ function Form() {
                     </div>
                     <div className="form-group">
                         <label htmlFor="course">Course:</label>
-                        <input type="text" id="course" name="course" placeholder="Eg. Math/Asma-ul-husna, etc..." required />
+                        <input type="text" id="course" name="course" placeholder="Eg. Math/Asma-ul-husna etc..." required />
                     </div>
                 </div>
 

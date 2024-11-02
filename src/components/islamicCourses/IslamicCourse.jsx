@@ -22,8 +22,6 @@ const Resources = () => {
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi impedit necessitatibus non eveniet provident inventore nesciunt fugiat</li>
                         <br />
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi impedit necessitatibus non eveniet provident inventore nesciunt fugiat</li>
-                        <br />
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio quod ab harum. Praesentium, necessitatibus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, debitis nostrum! Rerum? </li>
                     </ul>
                 </div>
 

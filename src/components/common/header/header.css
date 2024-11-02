@@ -22,8 +22,6 @@
 .button {
 	font-size: 2rem;
 	font-weight: bolder;
-	display: flex;
-	justify-content: center;
 }
 
 /*--------head------------*/
