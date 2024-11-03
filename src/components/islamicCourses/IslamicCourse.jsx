@@ -6,7 +6,7 @@ const Resources = () => {
     return (
         <>
             <ResourcesCard />
-            <h1 className='instruct'>Instructors</h1>
+            <h1 style={{ fontSize: "2.2rem", marginBottom: "2rem", textAlign: "center" }} className='instruct'>Instructors</h1>
             <section className='instructor'>
                 <img src="https://images.pexels.com/photos/8489309/pexels-photo-8489309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="None" />
                 <div className="instructor-info">

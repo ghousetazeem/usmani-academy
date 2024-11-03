@@ -107,7 +107,7 @@ export const iresourcesCard = [
 		resourceRoute: 'islamic-course/organization',
 	},
 	{
-		id: 1,
+		id: 2,
 		cover: 'https://lh3.googleusercontent.com/y1lynXwFhvvzFkzvmeTTB2UdlKqt84a44hG6ToLYNV2IcaPvOEz8MKTwEo1vsAFZ8jZaGrRJwDj4SSDpZ8Wffdn0s39IGwAT4E25Bri4ggDnVV3ZI0d_LIJEJb4TeJdsvCKuzFSC',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
@@ -122,7 +122,7 @@ export const iresourcesCard = [
 		resourceRoute: 'islamic-course/asma-ul-husna',
 	},
 	{
-		id: 1,
+		id: 3,
 		cover: 'https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
@@ -132,40 +132,40 @@ export const iresourcesCard = [
 				totalTime: '50 lectures (190 hrs)',
 			},
 		],
-		courseTitle: 'Tafseer-al-Surahs',
+		courseTitle: 'Tafseer-of-Surahs',
 		pricePer: '$15 per month',
 		resourceRoute: 'islamic-course/tafseer-al-surah',
 	},
-	{
-		id: 1,
-		cover: 'https://img.freepik.com/premium-photo/happy-muslim-parents-their-kids-relaxing-floor-home-looking-camera_1131934-1144.jpg',
-		coursesName: 'Introducing to Software Engineering',
-		courTeacher: [
-			{
-				dcover: './images/back.webp',
-				name: 'by John Smith',
-				totalTime: '50 lectures (190 hrs)',
-			},
-		],
-		courseTitle: 'How to be a Happy Muslim',
-		pricePer: '$15 per month',
-		resourceRoute: 'islamic-course/happy-muslim',
-	},
-	{
-		id: 1,
-		cover: 'https://images.pexels.com/photos/4386373/pexels-photo-4386373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		coursesName: 'Introducing to Software Engineering',
-		courTeacher: [
-			{
-				dcover: './images/back.webp',
-				name: 'by John Smith',
-				totalTime: '50 lectures (190 hrs)',
-			},
-		],
-		courseTitle: 'Islamic Financial Literacy',
-		pricePer: '$15 per month',
-		resourceRoute: 'islamic-course/finance-literacy',
-	},
+	// {
+	// 	id: 4,
+	// 	cover: 'https://img.freepik.com/premium-photo/happy-muslim-parents-their-kids-relaxing-floor-home-looking-camera_1131934-1144.jpg',
+	// 	coursesName: 'Introducing to Software Engineering',
+	// 	courTeacher: [
+	// 		{
+	// 			dcover: './images/back.webp',
+	// 			name: 'by John Smith',
+	// 			totalTime: '50 lectures (190 hrs)',
+	// 		},
+	// 	],
+	// 	courseTitle: 'How to be a Happy Muslim',
+	// 	pricePer: '$15 per month',
+	// 	resourceRoute: 'islamic-course/happy-muslim',
+	// },
+	// {
+	// 	id: 5,
+	// 	cover: 'https://images.pexels.com/photos/4386373/pexels-photo-4386373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+	// 	coursesName: 'Introducing to Software Engineering',
+	// 	courTeacher: [
+	// 		{
+	// 			dcover: './images/back.webp',
+	// 			name: 'by John Smith',
+	// 			totalTime: '50 lectures (190 hrs)',
+	// 		},
+	// 	],
+	// 	courseTitle: 'Islamic Financial Literacy',
+	// 	pricePer: '$15 per month',
+	// 	resourceRoute: 'islamic-course/finance-literacy',
+	// },
 
 ];
 

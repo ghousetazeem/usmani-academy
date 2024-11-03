@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
-// English Payment Endpoint ($100)
 app.post('/english-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
@@ -56,7 +55,6 @@ app.post('/english-payment', async (req, res) => {
     }
 });
 
-// Robotics Payment Endpoint ($50)
 app.post('/robotics-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
@@ -94,7 +92,6 @@ app.post('/robotics-payment', async (req, res) => {
     }
 });
 
-// Math Payment Endpoint ($40)
 app.post('/math-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
@@ -106,7 +103,7 @@ app.post('/math-payment', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
+                unit_amount: 100 * 100, // 40 dollars
                 currency: 'usd',
             });
 
@@ -172,7 +169,7 @@ app.post('/asma-ul-husna', async (req, res) => {
 app.post('/islamic-organzations', async (req, res) => {
     try {
         const product = await stripe.products.create({
-            name: "Math Payment Demo",
+            name: "Islamic Organization Course",
             description: "Demo product for Math form payment.",
             images: ["./logo.png"]
         });
@@ -180,7 +177,7 @@ app.post('/islamic-organzations', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
+                unit_amount: 100 * 100, // 40 dollars
                 currency: 'usd',
             });
 
@@ -209,7 +206,7 @@ app.post('/islamic-organzations', async (req, res) => {
 app.post('/tafseer-of-surahs', async (req, res) => {
     try {
         const product = await stripe.products.create({
-            name: "Math Payment Demo",
+            name: "Tafseer of Surahs Course",
             description: "Demo product for Math form payment.",
             images: ["./logo.png"]
         });
@@ -217,7 +214,7 @@ app.post('/tafseer-of-surahs', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
+                unit_amount: 100 * 100, // 40 dollars
                 currency: 'usd',
             });
 
@@ -243,10 +240,10 @@ app.post('/tafseer-of-surahs', async (req, res) => {
     }
 });
 
-app.post('/asma-ul-husna', async (req, res) => {
+app.post('/financial-literacy', async (req, res) => {
     try {
         const product = await stripe.products.create({
-            name: "Math Payment Demo",
+            name: "Islamic Financial Literacty Course",
             description: "Demo product for Math form payment.",
             images: ["./logo.png"]
         });
@@ -254,7 +251,7 @@ app.post('/asma-ul-husna', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
+                unit_amount: 100 * 100, // 40 dollars
                 currency: 'usd',
             });
 
@@ -280,10 +277,10 @@ app.post('/asma-ul-husna', async (req, res) => {
     }
 });
 
-app.post('/asma-ul-husna', async (req, res) => {
+app.post('/happy-muslim', async (req, res) => {
     try {
         const product = await stripe.products.create({
-            name: "Math Payment Demo",
+            name: "How to be a Happy Muslim Course",
             description: "Demo product for Math form payment.",
             images: ["./logo.png"]
         });
@@ -291,7 +288,7 @@ app.post('/asma-ul-husna', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
+                unit_amount: 100 * 100,
                 currency: 'usd',
             });
 
@@ -317,42 +314,6 @@ app.post('/asma-ul-husna', async (req, res) => {
     }
 });
 
-app.post('/asma-ul-husna', async (req, res) => {
-    try {
-        const product = await stripe.products.create({
-            name: "Math Payment Demo",
-            description: "Demo product for Math form payment.",
-            images: ["./logo.png"]
-        });
-
-        if (product) {
-            const price = await stripe.prices.create({
-                product: product.id,
-                unit_amount: 40 * 100, // 40 dollars
-                currency: 'usd',
-            });
-
-            if (price.id) {
-                const session = await stripe.checkout.sessions.create({
-                    payment_method_types: ['card'],  // Only allow card payments
-                    line_items: [
-                        {
-                            price: price.id,
-                            quantity: 1,
-                        }
-                    ],
-                    mode: 'payment',
-                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
-                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
-                });
-
-                res.json(session);
-            }
-        }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
 
 app.listen(3000, () => {
     console.log('Server running on port 3000');

@@ -158,56 +158,102 @@
     color: #fff;
 }
 
-/*-------------online---------*/
-@media screen and (max-width: 768px) {}
-
+/* 
 .instructor {
-    margin: 14rem;
-    margin-top: 4rem;
-    /* border: 2px solid black; */
+    margin: 0.6rem;
+    margin-bottom: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 0.4rem;
-    gap: 3rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     background-color: whitesmoke;
+    max-width: 1800px;
+} */
+
+.instruct h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.instructor:hover {
-    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0.2, 0.2);
-}
-
-.instructor-info {
-    margin-top: 1.4rem;
-    padding-right: 1rem;
+.instructor {
+    /* Centers the section horizontally */
+    display: flex;
+    flex-direction: column;
+    /* Stacks elements on mobile */
+    align-items: center;
+    border-radius: 0.4rem;
+    /* box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke; */
+    max-width: 1200px;
+    /* Limits width for desktop */
+    padding: 1.5rem;
 }
 
 .instructor img {
-    width: 400px;
-    height: 600px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    /* Controls image width on desktop */
     border-top-left-radius: 0.4rem;
-    border-bottom-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
 }
 
-.instructor h2 {
-    font-size: 3rem;
-    margin-bottom: 0;
+.instructor-info {
+    padding: 1.4rem;
+    text-align: center;
 }
 
-.instructor h3 {
-    font-size: 1.4rem;
+/* Styling for text within instructor-info */
+.instructor-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.instructor-info h3 {
+    font-size: 1.2rem;
     font-weight: bold;
+    text-align: start;
 }
 
-.instructor p {
+.instructor-info p,
+.instructor-info h4,
+.instructor-info ul li {
     font-size: 1rem;
     text-align: start;
 }
 
-.instructor ol {
-    list-style: circle;
-}
+/* Responsive Styling */
+@media screen and (min-width: 768px) {
+    .instructor {
+        flex-direction: row;
+        /* Horizontal layout on larger screens */
+        align-items: flex-start;
+        padding: 2rem;
+    }
 
-.instruct {
-    text-align: center;
-    font-size: 4rem;
+    .instructor img {
+        width: 50%;
+        max-width: 400px;
+        /* Ensures image does not exceed half of section width */
+        height: auto;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0.4rem;
+    }
+
+    .instructor-info {
+        width: 50%;
+        padding: 1rem 2rem;
+        /* Adds spacing between image and content */
+        text-align: left;
+    }
+
+    .instructor-info h2 {
+        font-size: 2.5rem;
+    }
+
+    .instructor-info h3 {
+        font-size: 1.4rem;
+    }
 }

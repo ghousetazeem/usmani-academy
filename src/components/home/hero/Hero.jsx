@@ -14,7 +14,7 @@ const Hero = () => {
 							title="Empowering Minds, Shaping Futures"
 						/>
 						<p className='hero-p'>
-							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
+							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resoucses.
 						</p>
 						<div className="button">
 							<Link to="/resources">
