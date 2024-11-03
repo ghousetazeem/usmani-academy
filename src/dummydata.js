@@ -42,23 +42,9 @@ export const awrapper = [
 	},
 ];
 export const resourcesCard = [
+
 	{
 		id: 1,
-		cover: '../images/courses/math.jpg',
-		coursesName: 'Introducing to Software Engineering',
-		courTeacher: [
-			{
-				dcover: './images/back.webp',
-				name: 'by John Smith',
-				totalTime: '50 lectures (190 hrs)',
-			},
-		],
-		courseTitle: 'Maths',
-		pricePer: '$15 per month',
-		resourceRoute: 'resources/maths',
-	},
-	{
-		id: 2,
 		cover: '../images/courses/robotics.jpg',
 		coursesName: 'Enhancing Adobe Photoshop CC 2020 Skills',
 		courTeacher: [
@@ -73,7 +59,52 @@ export const resourcesCard = [
 		resourceRoute: 'resources/robotics',
 	},
 	{
+		id: 2,
+		cover: 'https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		coursesName: 'Introducing to Software Engineering',
+		courTeacher: [
+			{
+				dcover: './images/back.webp',
+				name: 'by John Smith',
+				totalTime: '50 lectures (190 hrs)',
+			},
+		],
+		courseTitle: 'Computer Networking',
+		pricePer: '$15 per month',
+		resourceRoute: 'resources/computer-networking',
+	},
+	{
 		id: 3,
+		cover: 'https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		coursesName: 'Introducing to Software Engineering',
+		courTeacher: [
+			{
+				dcover: './images/back.webp',
+				name: 'by John Smith',
+				totalTime: '50 lectures (190 hrs)',
+			},
+		],
+		courseTitle: 'Programming',
+		pricePer: '$15 per month',
+		resourceRoute: 'resources/programming',
+	},
+	{
+		id: 4,
+		cover: '../images/courses/math.jpg',
+		coursesName: 'Introducing to Software Engineering',
+		courTeacher: [
+			{
+				dcover: './images/back.webp',
+				name: 'by John Smith',
+				totalTime: '50 lectures (190 hrs)',
+			},
+		],
+		courseTitle: 'Maths',
+		pricePer: '$15 per month',
+		resourceRoute: 'resources/maths',
+	},
+	{
+		id: 5,
 		cover: '../images/courses/english.jpg',
 		coursesName: 'HTML, CSS, and Javascript for Web Developers',
 		courTeacher: [

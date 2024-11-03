@@ -129,6 +129,80 @@ app.post('/math-payment', async (req, res) => {
     }
 });
 
+app.post('/computer-networking', async (req, res) => {
+    try {
+        const product = await stripe.products.create({
+            name: "Computer Networking Course",
+            description: "Demo product for Math form payment.",
+            images: ["./logo.png"]
+        });
+
+        if (product) {
+            const price = await stripe.prices.create({
+                product: product.id,
+                unit_amount: 100 * 100, // 40 dollars
+                currency: 'usd',
+            });
+
+            if (price.id) {
+                const session = await stripe.checkout.sessions.create({
+                    payment_method_types: ['card'],  // Only allow card payments
+                    line_items: [
+                        {
+                            price: price.id,
+                            quantity: 1,
+                        }
+                    ],
+                    mode: 'payment',
+                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
+                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
+                });
+
+                res.json(session);
+            }
+        }
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+app.post('/programming', async (req, res) => {
+    try {
+        const product = await stripe.products.create({
+            name: "Programming payment",
+            description: "Demo product for Math form payment.",
+            images: ["./logo.png"]
+        });
+
+        if (product) {
+            const price = await stripe.prices.create({
+                product: product.id,
+                unit_amount: 100 * 100, // 40 dollars
+                currency: 'usd',
+            });
+
+            if (price.id) {
+                const session = await stripe.checkout.sessions.create({
+                    payment_method_types: ['card'],  // Only allow card payments
+                    line_items: [
+                        {
+                            price: price.id,
+                            quantity: 1,
+                        }
+                    ],
+                    mode: 'payment',
+                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
+                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
+                });
+
+                res.json(session);
+            }
+        }
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 app.post('/asma-ul-husna', async (req, res) => {
     try {
         const product = await stripe.products.create({
