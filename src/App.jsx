@@ -24,6 +24,8 @@ import AsmaeHusna from './components/islamicCourses/AsmaUlHusna/AsmaeHusna';
 import Tafseer from './components/islamicCourses/TafseeAlSurahs/Tafseer';
 import HappyMuslim from './components/islamicCourses/HowToBeAHappyMuslim/HappyMuslim';
 import FinaLiteracy from './components/islamicCourses/Finacial Literacy/FinLiteracy';
+import ComputerNetwork from './components/resources/ComputerNetworking/ComputerNetwork';
+import Programming from './components/resources/Programming/Programming';
 
 function AppContent() {
   const location = useLocation();
@@ -42,6 +44,8 @@ function AppContent() {
         <Route exact path="/resources/maths" element={<Mathematics />} />
         <Route exact path="/resources/robotics" element={<Robotics />} />
         <Route exact path="/resources/english" element={<English />} />
+        <Route exact path="/resources/computer-networking" element={<ComputerNetwork />} />
+        <Route exact path="/resources/programming" element={<Programming />} />
         <Route exact path="/islamic-course/organization" element={<Organization />} />
         <Route exact path="/islamic-course/asma-ul-husna" element={<AsmaeHusna />} />
         <Route exact path="/islamic-course/tafseer-al-surah" element={<Tafseer />} />
