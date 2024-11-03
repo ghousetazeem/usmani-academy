@@ -7,16 +7,16 @@ const Resources = () => {
 	return (
 		<>
 			<ResourcesCard />
-			<h1 className='instruct'>Instructors</h1>
+			<h1 style={{ fontSize: "2.2rem", marginBottom: "2rem", textAlign: "center" }} className='instruct'>Instructors</h1>
 			<section className='instructor'>
 				<img src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600" alt="None" />
 				<div className="instructor-info">
-					<h2>FNU Raees ul Haq Mohammad Rizwan</h2>
-					<h3>Chief Operating Office (COO) - Usmani Academy</h3>
+					<h2>Raees ul Haq Mohammad Rizwan</h2>
+					<h3 style={{ textAlign: "center" }}>Chief Operating Office (COO) - Usmani Academy</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam amet totam provident natus quia ullam sed fugiat hic. Aperiam eius error ratione quis reprehenderit in, ut tempore doloremque earum et.</p>
 					<br />
 					<h3>Expertise:</h3>
-					<h4>Robotics, Math, English, Philosphy</h4>
+					<h4>Robotics, Math, English, Philosophy</h4>
 					<br />
 					<h3>Experience:</h3>
 					<ul>
@@ -25,8 +25,8 @@ const Resources = () => {
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet distinctio quod ab harum. Praesentium, necessitatibus! </li>
 					</ul>
 				</div>
-
 			</section>
+
 		</>
 	);
 };

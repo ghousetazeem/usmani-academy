@@ -27,7 +27,7 @@ function Form() {
 
     const sendEmail = () => {
         return emailjs
-            .sendForm('service_v2tgif3', 'template_cbqpaga', form.current, 'hVRjQU-0qQWPCIa4h')
+            .sendForm('service_v2tgif3', 'template_6lcsknl', form.current, 'hVRjQU-0qQWPCIa4h')
             .then(
                 () => {
                     console.log('Email sent successfully!');
@@ -77,8 +77,8 @@ function Form() {
                         <input type="tel" id="telephone" name="telephone" placeholder="Eg. 3164031898" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="parents_whatsapp">Parent's WhatsApp Number:</label>
-                        <input type="tel" id="parents_whatsapp" name="parents_whatsapp" placeholder="Eg. 3164031898" required />
+                        <label htmlFor="card_holder_name">Card Holder Name (As mentioned on the card):</label>
+                        <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Eg. MUHAMMAD USMANI" required />
                     </div>
                 </div>
 

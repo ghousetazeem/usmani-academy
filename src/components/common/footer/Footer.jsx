@@ -11,7 +11,7 @@ const Footer = () => {
 						<h1>Usmani Academy</h1>
 						<span>Empowering Minds, Shaping Futures</span>
 						<p>
-							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resourses.
+							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resources.
 						</p>
 						<a href="https://www.instagram.com/usmani_academy?igsh=MW9qNXgwZjNzM3A0ZA%3D%3D&utm_source=qr"><i className="fab fa-instagram icon"></i></a>
 					</div>
