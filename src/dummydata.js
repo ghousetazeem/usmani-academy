@@ -84,7 +84,7 @@ export const resourcesCard = [
 				totalTime: '50 lectures (190 hrs)',
 			},
 		],
-		courseTitle: 'Programming',
+		courseTitle: 'Python Programming',
 		pricePer: '$15 per month',
 		resourceRoute: 'resources/programming',
 	},
@@ -135,7 +135,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Islamic Organizations',
 		pricePer: '$15 per month',
-		resourceRoute: 'islamic-course/organization',
+		resourceRoute: '/islamic-courses/organization',
 	},
 	{
 		id: 2,
@@ -150,7 +150,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Asma-ul-Husna',
 		pricePer: '$15 per month',
-		resourceRoute: 'islamic-course/asma-ul-husna',
+		resourceRoute: '/islamic-courses/asma-ul-husna',
 	},
 	{
 		id: 3,
@@ -165,7 +165,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Tafseer-of-Surahs',
 		pricePer: '$15 per month',
-		resourceRoute: 'islamic-course/tafseer-al-surah',
+		resourceRoute: '/islamic-courses/tafseer-al-surah',
 	},
 	// {
 	// 	id: 4,
@@ -180,7 +180,7 @@ export const iresourcesCard = [
 	// 	],
 	// 	courseTitle: 'How to be a Happy Muslim',
 	// 	pricePer: '$15 per month',
-	// 	resourceRoute: 'islamic-course/happy-muslim',
+	// 	resourceRoute: '/islamic-courses/happy-muslim',
 	// },
 	// {
 	// 	id: 5,
@@ -195,7 +195,7 @@ export const iresourcesCard = [
 	// 	],
 	// 	courseTitle: 'Islamic Financial Literacy',
 	// 	pricePer: '$15 per month',
-	// 	resourceRoute: 'islamic-course/finance-literacy',
+	// 	resourceRoute: '/islamic-courses/finance-literacy',
 	// },
 
 ];

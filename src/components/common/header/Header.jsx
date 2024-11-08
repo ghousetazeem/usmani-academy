@@ -23,7 +23,11 @@ const Header = () => {
 						<a href="/">
 							<div className="start">
 								<img className="logoImg" src="../logo-acad.png" />
-								<div className="button">Usmani Academy</div>
+								<div>
+									<div className="button">Usmani Academy</div>
+									<div style={{ fontSize: "16px", textAlign: "center", marginTop: "-0.8rem", fontWeight: "460", letterSpacing: "1px" }} className="button">Teaching and Learning</div>
+								</div>
+
 							</div>
 						</a>
 						<ul

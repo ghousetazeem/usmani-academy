@@ -39,18 +39,18 @@ function AppContent() {
         <Route exact path="/team" element={<Team />} />
         <Route exact path="/art" element={<Art />} />
         <Route exact path="/art/art1" element={<Art1 />} />
-        <Route exact path="/islamic-course" element={<IslamicCourse />} />
+        <Route exact path="//islamic-courses" element={<IslamicCourse />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/resources/maths" element={<Mathematics />} />
         <Route exact path="/resources/robotics" element={<Robotics />} />
         <Route exact path="/resources/english" element={<English />} />
         <Route exact path="/resources/computer-networking" element={<ComputerNetwork />} />
         <Route exact path="/resources/programming" element={<Programming />} />
-        <Route exact path="/islamic-course/organization" element={<Organization />} />
-        <Route exact path="/islamic-course/asma-ul-husna" element={<AsmaeHusna />} />
-        <Route exact path="/islamic-course/tafseer-al-surah" element={<Tafseer />} />
-        <Route exact path="/islamic-course/happy-muslim" element={<HappyMuslim />} />
-        <Route exact path="/islamic-course/finance-literacy" element={<FinaLiteracy />} />
+        <Route exact path="//islamic-courses/organization" element={<Organization />} />
+        <Route exact path="//islamic-courses/asma-ul-husna" element={<AsmaeHusna />} />
+        <Route exact path="//islamic-courses/tafseer-al-surah" element={<Tafseer />} />
+        <Route exact path="//islamic-courses/happy-muslim" element={<HappyMuslim />} />
+        <Route exact path="//islamic-courses/finance-literacy" element={<FinaLiteracy />} />
         <Route path="/success" element={<Success />} />
         <Route path="/cancelled" element={<PaymentCancelled />} />
       </Routes>

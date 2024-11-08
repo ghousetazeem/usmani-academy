@@ -9,7 +9,7 @@ const Footer = () => {
 				<div className="mycontainer padding flex-footer flex-padding">
 					<div className="box logo" style={{ flex: '1' }}>
 						<h1>Usmani Academy</h1>
-						<span>Empowering Minds, Shaping Futures</span>
+						<span>Teaching and Learning</span>
 						<p>
 							Usmani Academy is to provide  high-quality education and fostering academic excellence through a diverse range of programs and resources.
 						</p>
