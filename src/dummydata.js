@@ -122,23 +122,23 @@ export const resourcesCard = [
 ];
 
 export const iresourcesCard = [
+	// {
+	// 	id: 1,
+	// 	cover: 'https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+	// 	coursesName: 'Introducing to Software Engineering',
+	// 	courTeacher: [
+	// 		{
+	// 			dcover: './images/back.webp',
+	// 			name: 'by John Smith',
+	// 			totalTime: '50 lectures (190 hrs)',
+	// 		},
+	// 	],
+	// 	courseTitle: 'Islamic Organizations',
+	// 	pricePer: '$15 per month',
+	// 	resourceRoute: '/islamic-courses/organization',
+	// },
 	{
 		id: 1,
-		cover: 'https://images.pexels.com/photos/2233416/pexels-photo-2233416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-		coursesName: 'Introducing to Software Engineering',
-		courTeacher: [
-			{
-				dcover: './images/back.webp',
-				name: 'by John Smith',
-				totalTime: '50 lectures (190 hrs)',
-			},
-		],
-		courseTitle: 'Islamic Organizations',
-		pricePer: '$15 per month',
-		resourceRoute: '/islamic-courses/organization',
-	},
-	{
-		id: 2,
 		cover: 'https://lh3.googleusercontent.com/y1lynXwFhvvzFkzvmeTTB2UdlKqt84a44hG6ToLYNV2IcaPvOEz8MKTwEo1vsAFZ8jZaGrRJwDj4SSDpZ8Wffdn0s39IGwAT4E25Bri4ggDnVV3ZI0d_LIJEJb4TeJdsvCKuzFSC',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
@@ -153,8 +153,8 @@ export const iresourcesCard = [
 		resourceRoute: '/islamic-courses/asma-ul-husna',
 	},
 	{
-		id: 3,
-		cover: 'https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+		id: 2,
+		cover: 'https://www.islamicplace.com/cdn/shop/products/2523_55c3d697e82e81.95764450_tajweed-quran-arabic-inside_large_3d7bc9f7-bee2-46d2-82dc-c553080210d5_1200x.jpg?v=1597520725',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
 			{
@@ -163,10 +163,25 @@ export const iresourcesCard = [
 				totalTime: '50 lectures (190 hrs)',
 			},
 		],
-		courseTitle: 'Tafseer-of-Surahs',
+		courseTitle: 'Tajweed of Quran',
 		pricePer: '$15 per month',
-		resourceRoute: '/islamic-courses/tafseer-al-surah',
+		resourceRoute: '/islamic-courses/tajweed',
 	},
+	// {
+	// 	id: 3,
+	// 	cover: 'https://images.pexels.com/photos/36704/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+	// 	coursesName: 'Introducing to Software Engineering',
+	// 	courTeacher: [
+	// 		{
+	// 			dcover: './images/back.webp',
+	// 			name: 'by John Smith',
+	// 			totalTime: '50 lectures (190 hrs)',
+	// 		},
+	// 	],
+	// 	courseTitle: 'Tafseer-of-Surahs',
+	// 	pricePer: '$15 per month',
+	// 	resourceRoute: '/islamic-courses/tafseer-al-surah',
+	// },
 	// {
 	// 	id: 4,
 	// 	cover: 'https://img.freepik.com/premium-photo/happy-muslim-parents-their-kids-relaxing-floor-home-looking-camera_1131934-1144.jpg',
