@@ -1,28 +1,41 @@
-import React from 'react'
-import Roadmap from '../../resources/Roadmap'
-import Form from './Form.jsx'
-
+import React from 'react';
+import Roadmap from '../../resources/Roadmap';
+import Form from './Form.jsx';
 
 const AsmaeHusna = () => {
+    const content = [
+        {
+            paragraph: "Course Instructor:",
+            listItems: ["Ustadha Sophia Khan"],
+        },
+        {
+            paragraph: "Course Date:",
+            listItems: ["December 7, 2024 - June 28, 2025 (Every Saturday)"],
+        },
+        {
+            paragraph: "Course Timings:",
+            listItems: ["10:00am - 11:00am (CST)"],
+        },
+        {
+            paragraph: "Location: Zoom (Online)",
+            listItems: ["TOTAL # of Classes = 25 classes", "TOTAL # of Teaching Hours = 25 hrs"],
+        },
+        {
+            paragraph: "Course Description",
+            listItems: ["Assembly and Wiring", "Flight Controller", "Coding and Compilation"],
+        },
+    ];
+
     return (
         <>
             <Roadmap
                 imageSrc="https://thumbs.dreamstime.com/b/name-allah-327209716.jpg"
-                heading="Beauty of Asma-e-husna"
-                paragraph="SENSORS AND ELEMENTS (Elementary School)"
-                listItems={['Proximity Sensor', 'Buzzers, LED, Jumper wires']}
-                paragraph2="ARDUINO R3 AND MOTOR DRIVERS (Middle School)"
-                listItems2={['Microprocessor and Microcontrollers', 'Arduino IDE', 'L293N & L293D Motor Drivers']}
-                paragraph3="OBSTACLE AVOIDING ROBOT (Middle through High School)"
-                listItems3={['Assembly and Wiring', 'Coding and Compilation']}
-                paragraph4="BLUETOOTH ROBOTS (Middle through High School)"
-                listItems4={['Assembly and Wiring', 'Coding and Compilation']}
-                paragraph5="F45 DRONE (High School)"
-                listItems5={['Assembly and Wiring  ', 'Flight Controller', 'Coding and Compilation']}
+                heading="Connect with the names of Allah - Asmaa ul Husna"
+                content={content}
             />
             <Form />
         </>
-    )
-}
+    );
+};
 
-export default AsmaeHusna
+export default AsmaeHusna;

@@ -150,7 +150,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Asma-ul-Husna',
 		pricePer: '$15 per month',
-		resourceRoute: '/islamic-courses/asma-ul-husna',
+		resourceRoute: 'islamic-courses/asma-ul-husna',
 	},
 	{
 		id: 2,
@@ -165,7 +165,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Tajweed of Quran',
 		pricePer: '$15 per month',
-		resourceRoute: '/islamic-courses/tajweed',
+		resourceRoute: 'islamic-courses/tajweed',
 	},
 	// {
 	// 	id: 3,

@@ -9,17 +9,8 @@ const Resources = () => {
 
 	const instructors = [
 		{
-			name: 'Muhammad Rizwan',
-			title: 'Chief Operating Officer - Usmani Academy',
-			image: rizwan,
-			description: 'Ustadha Sophia Khan is a motivational speaker, spiritual advisor, educator, and Muslim community leader, particularly recognized for her engaging and relatable teaching style, especially among Muslim youth and young adults. She serves as the Youth Girls Advisor at the Islamic Center of Frisco - Texas.Ustadha Sophia majored in Islamic Shariah Law in Arabic at the University of Sharjah, U.A.E., and holds a degree in Psychology with a concentration on Mental Health.With over seven years of study under the guidance of renowned Islamic scholars in the U.A.E., Ustadha Sophia also had the privilege of teaching a wide range of Islamic subjects to youth of all ages while working under the Awqaaf (U.A.E. Ministry of General Authority of Islamic Affairs & Endowments). Her specialties include Aqeedah (Islamic Creed), Adaab wa Akhlaaq (Islamic Character and Manners), Asmaa ul Husna (Names of Allah), and Tafseer (exegesis) of the Quran Ustadha Sophias primary mission is to help the younger generation strengthen their connection with Allah(subhanahu wa taala) and navigate lifes challenges through the guidance of the Quran, the Beautiful Names and Attributes of Allah, and Islamic Psychology. She is a sought-after speaker at various masajid, conferences, and events aimed at youth, college students, and young adults, and has been invited to speak at numerous university MSA gatherings, including those at UTD, UNT, Texas A&M, and UT Austin, among others. Outside of her teaching, you will find her at different DFW Muslim community events with her husband and two daughters. To stay updated on what she does - you can follow her on Instagram: @ustadhasophiakhan',
+			name: 'Muhammad Rizwan', title: 'Chief Operating Officer - Usmani Academy', image: rizwan, description: 'Mohammed Rizwan is an entrepreneurial leader with expertise in robotics, digital marketing, and engineering. With a Bachelor’s in Electronics and Instrumentation and pursuing a Master’s in Computing, he co-founded The Ingentas Corp, leading projects in drone technology and robotics education, impacting over 4,000 students. He also founded ZVAN, delivering impactful marketing campaigns across India. Rizwan’s notable projects include the MIMOSA Suit, a women’s safety device, and DOORITY, a machine learning security system. He chaired Club Optimus, organizing major robotics competitions and earning national accolades. His skills span IoT, machine learning, PCB design, and digital marketing. Recognized for strategic thinking, he has secured patents, led events, and excelled in national competitions. Currently, he is President of the Muslim Student Association and a Graduate Senator at Wichita State University.',
 		},
-		// {
-		// 	name: 'Muhammad Aamir Usmani',
-		// 	title: 'Chief Advisor - UA | Director - Library Technologies',
-		// 	// image: aamirsir,
-		// 	description: 'Muhammad Aamir Usmani has an extensive background in library technologies and serves as a Chief Advisor...',
-		// },
 	];
 
 	const openModal = (profile) => {
@@ -82,14 +73,15 @@ const styles = {
 		zIndex: 1000,
 	},
 	modal: {
-		width: '80%',
-		maxWidth: '1500px',
-		height: '60vh',
+		width: '90%',
+		maxWidth: '600px',
+		height: 'auto',
 		backgroundColor: '#fff',
 		borderRadius: '10px',
 		padding: '20px',
 		position: 'relative',
 		boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+		overflow: 'hidden',
 	},
 	closeButton: {
 		position: 'absolute',
@@ -102,33 +94,28 @@ const styles = {
 	},
 	modalContent: {
 		display: 'flex',
-		flexDirection: 'row',
+		flexDirection: 'column',
 		alignItems: 'center',
+		gap: '1rem',
 	},
 	modalImage: {
-		width: '400px',
-		height: '56vh',
+		width: '100%',
+		maxHeight: '300px',
+		objectFit: 'cover',
 		borderRadius: '10px',
-		marginRight: '20px',
 	},
 	modalText: {
-		maxHeight: '500px',
+		maxHeight: '400px',
 		overflowY: 'auto',
-		flex: 1,
-		padding: '1rem'
+		textAlign: 'justify',
+		padding: '0 1rem',
 	},
 	scrollableText: {
-		marginTop: '10px',
-		textAlign: 'justify',
-		fontSize: '1rem'
+		fontSize: '1rem',
 	},
-	'@media (max-width: 600px)': {
-		modalContent: {
-			flexDirection: 'column',
-			alignItems: 'center',
-		},
-		modalImage: {
-			marginBottom: '15px',
+	'@media (min-width: 600px)': {
+		modal: {
+			flexDirection: 'row',
 		},
 	},
 };
