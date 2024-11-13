@@ -17,7 +17,7 @@ const Resources = () => {
         },
         {
             name: 'Muhammad Aamir Usmani',
-            title: 'Chief Advisor - UA | Director - Library Technologies',
+            title: 'Chief Advisor - UA',
             image: aamirsir,
             description: 'Muhammad Aamir Usmani has an extensive background in library technologies and serves as a Chief Advisor.',
         },
