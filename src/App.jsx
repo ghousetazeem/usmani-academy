@@ -26,9 +26,15 @@ import HappyMuslim from './components/islamicCourses/HowToBeAHappyMuslim/HappyMu
 import FinaLiteracy from './components/islamicCourses/Finacial Literacy/FinLiteracy';
 import ComputerNetwork from './components/resources/ComputerNetworking/ComputerNetwork';
 import Programming from './components/resources/Programming/Programming';
+import { useState, useEffect } from 'react';
 
 function AppContent() {
   const location = useLocation();
+  const [showPopup, setShowPopup] = useState(true);
+
+  const dismissPopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <>
@@ -55,6 +61,72 @@ function AppContent() {
         <Route path="/cancelled" element={<PaymentCancelled />} />
       </Routes>
       {location.pathname !== "/community-chat" && <Footer />}
+
+      {showPopup && (
+        <div style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '40px',
+          backgroundColor: '#273e06',
+          color: 'white',
+          padding: '20px',
+          paddingTop: '10px',
+          paddingLeft: '0',
+          borderRadius: '10px',
+          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+          zIndex: '1000',
+          maxWidth: '450px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          // border: '2px solid #007bff',
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%',
+            margin: '0px 0px -10px 30px'
+          }}>
+            <p style={{ fontWeight: 'bold', margin: 0, fontSize: '1.4rem' }}>Asma ul Husna Course</p>
+            <button
+              onClick={dismissPopup}
+              style={{
+                backgroundColor: 'transparent',
+                color: 'white',
+                border: 'none',
+                fontSize: '16px',
+                cursor: 'pointer',
+                fontWeight: 'bold',
+                margin: '0'
+              }}
+            >
+              ✖
+            </button>
+          </div>
+          <p style={{ margin: '0', textAlign: 'center', fontSize: '18px', marginLeft: '1.8rem' }}>
+            Classes starting from <strong>Dec-7</strong>
+          </p>
+          <button
+            onClick={() => {
+              window.location.href = '/islamic-courses/asma-ul-husna';
+            }}
+            style={{
+              marginTop: '10px',
+              backgroundColor: 'white',
+              color: '#273e06',
+              border: 'none',
+              padding: '10px 15px',
+              borderRadius: '3px',
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              marginLeft: '1.8rem'
+            }}
+          >
+            Register Now
+          </button>
+        </div>
+      )}
     </>
   );
 }
