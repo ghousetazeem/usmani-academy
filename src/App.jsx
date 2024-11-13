@@ -31,14 +31,36 @@ import { useState, useEffect } from 'react';
 function AppContent() {
   const location = useLocation();
   const [showPopup, setShowPopup] = useState(true);
+  const [progress, setProgress] = useState(100);
+  const [color, setColor] = useState('green'); // State to track the color of the progress bar
 
   const dismissPopup = () => {
     setShowPopup(false);
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        const newProgress = Math.max(prev - 1, 0); // Decrease progress by 1% every 100ms
+        // Update the color based on progress
+        setColor(newProgress > 0 ? `rgb(${255 - (newProgress * 2.55)}, 255, ${255 - (newProgress * 2.55)})` : 'green');
+        return newProgress;
+      });
+    }, 100);
+
+    const timer = setTimeout(() => {
+      setShowPopup(false);
+    }, 10000); // Dismiss after 10 seconds
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timer);
+    };
+  }, []); // Run this effect once on component mount
+
   return (
     <>
-      <Routes> {/* Switch to Routes */}
+      <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/resources" element={<Resources />} />
@@ -79,7 +101,6 @@ function AppContent() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'flex-start',
-          // border: '2px solid #007bff',
         }}>
           <div style={{
             display: 'flex',
@@ -125,11 +146,31 @@ function AppContent() {
           >
             Register Now
           </button>
+          {/* Timeline progress bar */}
+          <div style={{
+            marginTop: '10px',
+            width: '106%',
+            height: '5px',
+            background: 'white',
+            borderRadius: '2.5px',
+            overflow: 'hidden',
+            marginBottom: '0'
+          }}>
+            <div style={{
+              width: `${progress}%`,
+              height: '100%',
+              background: color,
+              transition: 'width 0.1s linear, background-color 0.1s linear',
+            }} />
+          </div>
         </div>
       )}
     </>
   );
 }
+
+
+
 
 function App() {
   return (
