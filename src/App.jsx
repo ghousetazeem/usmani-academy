@@ -27,6 +27,7 @@ import FinaLiteracy from './components/islamicCourses/Finacial Literacy/FinLiter
 import ComputerNetwork from './components/resources/ComputerNetworking/ComputerNetwork';
 import Programming from './components/resources/Programming/Programming';
 import { useState, useEffect } from 'react';
+import TajweedofQuran from './components/islamicCourses/TajweedofQuran/TajweedofQuran';
 
 function AppContent() {
   const location = useLocation();
@@ -76,6 +77,7 @@ function AppContent() {
         <Route exact path="/resources/programming" element={<Programming />} />
         <Route exact path="//islamic-courses/organization" element={<Organization />} />
         <Route exact path="//islamic-courses/asma-ul-husna" element={<AsmaeHusna />} />
+        <Route exact path="//islamic-courses/tajweed-of-quran" element={<TajweedofQuran />} />
         <Route exact path="//islamic-courses/tafseer-al-surah" element={<Tafseer />} />
         <Route exact path="//islamic-courses/happy-muslim" element={<HappyMuslim />} />
         <Route exact path="//islamic-courses/finance-literacy" element={<FinaLiteracy />} />

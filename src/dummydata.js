@@ -139,7 +139,7 @@ export const iresourcesCard = [
 	// },
 	{
 		id: 1,
-		cover: 'https://lh3.googleusercontent.com/y1lynXwFhvvzFkzvmeTTB2UdlKqt84a44hG6ToLYNV2IcaPvOEz8MKTwEo1vsAFZ8jZaGrRJwDj4SSDpZ8Wffdn0s39IGwAT4E25Bri4ggDnVV3ZI0d_LIJEJb4TeJdsvCKuzFSC',
+		cover: 'https://t4.ftcdn.net/jpg/06/71/02/21/360_F_671022125_AIjLl6s47x0Aws5HBA2blCu8n2WbVrct.jpg',
 		coursesName: 'Introducing to Software Engineering',
 		courTeacher: [
 			{
@@ -165,7 +165,7 @@ export const iresourcesCard = [
 		],
 		courseTitle: 'Tajweed of Quran',
 		pricePer: '$15 per month',
-		resourceRoute: 'islamic-courses/tajweed',
+		resourceRoute: 'islamic-courses/tajweed-of-quran',
 	},
 	// {
 	// 	id: 3,
