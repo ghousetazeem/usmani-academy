@@ -1,27 +1,16 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require('stripe')('sk_test_51PvqcCP1EsRYpQZoB6qrfvZG8jlXgbLEFYmcAhBX5oGDwOKr82vIK4P9Qq8pBXJ8SaLomJuex46NchcDVhvQk2Ki00tWIi0mYB');
 
 const app = express();
 
-const cors = require('cors');
-
-const corsOptions = {
-    origin: [
-        "https://www.usmaniacademy.com", // Production frontend
-        "https://usmani-academy-frontend.vercel.app", // Preview frontend
-        "http://localhost:3000" // Development frontend
-    ],
-    methods: "GET,POST,PUT,DELETE,OPTIONS",
+app.use(cors({
+    // origin: ["http://localhost:5500", "http://localhost:5173", "https://usmani-academy-backend.vercel.app/", "https://usmani-academy-frontend.vercel.app/"],
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    credentials: true,
     allowedHeaders: "Content-Type,Authorization",
-    credentials: true
-};
-
-app.use(cors(corsOptions));
-
-// Preflight requests (OPTIONS)
-app.options('*', cors(corsOptions));
+}));
 
 app.use(express.json());
 
@@ -77,7 +66,7 @@ app.post('/robotics-payment', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 5 * 100, // 50 dollars
+                unit_amount: 50 * 100, // 50 dollars
                 currency: 'usd',
             });
 
@@ -214,42 +203,6 @@ app.post('/programming', async (req, res) => {
     }
 });
 
-app.post('/tajweed-of-quran', async (req, res) => {
-    try {
-        const product = await stripe.products.create({
-            name: "Tajweed Of Quran",
-            description: "Demo product for Tajweed of Quran payment.",
-            images: ["./logo.png"]
-        });
-
-        if (product) {
-            const price = await stripe.prices.create({
-                product: product.id,
-                unit_amount: 70 * 100, // 40 dollars
-                currency: 'usd',
-            });
-
-            if (price.id) {
-                const session = await stripe.checkout.sessions.create({
-                    payment_method_types: ['card'],  // Only allow card payments
-                    line_items: [
-                        {
-                            price: price.id,
-                            quantity: 1,
-                        }
-                    ],
-                    mode: 'payment',
-                    success_url: 'https://usmani-academy-frontend.vercel.app/success',
-                    cancel_url: 'https://usmani-academy-frontend.vercel.app/cancelled',
-                });
-
-                res.json(session);
-            }
-        }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
 app.post('/asma-ul-husna', async (req, res) => {
     try {
         const product = await stripe.products.create({
@@ -261,7 +214,7 @@ app.post('/asma-ul-husna', async (req, res) => {
         if (product) {
             const price = await stripe.prices.create({
                 product: product.id,
-                unit_amount: 5 * 100, // 40 dollars
+                unit_amount: 70 * 100, // 40 dollars
                 currency: 'usd',
             });
 
