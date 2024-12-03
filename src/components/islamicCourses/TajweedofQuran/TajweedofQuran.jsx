@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Roadmap from '../../resources/Roadmap';
+import Roadmap from '../../resources/Roadmap.jsx';
 import Form from './Form.jsx';
 import './popup.css'; // Updated CSS for popup styling
 
