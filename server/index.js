@@ -6,11 +6,10 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const app = express();
 
 app.use(cors({
-    // origin: ["http://localhost:5500", "http://localhost:5173", "https://usmani-academy-backend.vercel.app/", "https://usmani-academy-frontend.vercel.app/"],
-    origin: "*",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    origin: ["http://localhost:5500", "http://localhost:5173", "https://usmani-academy-frontend.vercel.app"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true,
-    allowedHeaders: "Content-Type,Authorization",
+    allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 app.use(express.json());
