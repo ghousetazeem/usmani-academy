@@ -5,12 +5,21 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 
-app.use(cors({
-    origin: ["http://localhost:5500", "http://localhost:5173", "https://usmani-academy-frontend.vercel.app"],
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"],
-}));
+const corsOptions = {
+    origin: [
+        "https://usmani-academy-frontend.vercel.app", // Your frontend domain
+        "http://localhost:5500", // For local development
+        "http://localhost:5173"
+    ],
+    methods: "GET,POST,PUT,DELETE,OPTIONS",
+    allowedHeaders: "Content-Type,Authorization",
+    credentials: true
+};
+
+app.use(cors(corsOptions));
+
+// Handle preflight requests explicitly
+app.options('*', cors(corsOptions));
 
 app.use(express.json());
 
