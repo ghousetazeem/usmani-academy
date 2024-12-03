@@ -96,7 +96,7 @@ app.post('/math-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Math Payment Demo",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -133,7 +133,7 @@ app.post('/computer-networking', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Computer Networking Course",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -170,7 +170,7 @@ app.post('/programming', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Programming payment",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -207,7 +207,7 @@ app.post('/asma-ul-husna', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Asma-ul-husna",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -244,7 +244,7 @@ app.post('/islamic-organzations', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Islamic Organization Course",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -281,7 +281,7 @@ app.post('/tafseer-of-surahs', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Tafseer of Surahs Course",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -318,7 +318,7 @@ app.post('/financial-literacy', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Islamic Financial Literacty Course",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -355,7 +355,7 @@ app.post('/happy-muslim', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "How to be a Happy Muslim Course",
-            description: "Demo product for Math form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
