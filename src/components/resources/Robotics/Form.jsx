@@ -77,8 +77,8 @@ function Form() {
                         <input type="tel" id="telephone" name="telephone" placeholder="Eg. 3164031898" required />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="card_holder_name">Card Holder Name and Email ID (Associated with card):</label>
-                        <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Eg. First Name Last Name | Email ID" required />
+                        <label htmlFor="card_holder_name">Card Holder Name (As mentioned on the card):</label>
+                        <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Eg. MUHAMMAD USMANI" required />
                     </div>
                 </div>
 
