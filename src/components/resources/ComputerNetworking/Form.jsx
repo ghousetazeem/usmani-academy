@@ -78,7 +78,7 @@ function Form() {
                     </div>
                     <div className="form-group">
                         <label htmlFor="card_holder_name">Card Holder Name (As mentioned on the card):</label>
-                        <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Eg. MUHAMMAD USMANI" required />
+                        <input type="text" id="card_holder_name" name="card_holder_name" placeholder="Eg. First Name Last Name" required />
                     </div>
                 </div>
 
