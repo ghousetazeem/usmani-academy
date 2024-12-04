@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
-
+require('dotenv').config();
 const app = express();
 
 app.use(cors({
@@ -22,7 +22,7 @@ app.post('/english-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "English Payment Demo",
-            description: "Demo product for English form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
@@ -59,7 +59,7 @@ app.post('/robotics-payment', async (req, res) => {
     try {
         const product = await stripe.products.create({
             name: "Robotics Payment Demo",
-            description: "Demo product for Robotics form payment.",
+            description: "Recipet Will be sent on your email in a while.",
             images: ["./logo.png"]
         });
 
